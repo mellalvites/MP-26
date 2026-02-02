@@ -1,0 +1,41 @@
+p {
+    background-color: aqua;
+}
+
+.parrafo1:hover{
+    color: red
+}
+
+.hover-amarillo:hover{
+    background-color: yellow;
+}
+
+#parrafo2 {
+
+    color: blue
+}
+
+div {
+    background-color: aqua;
+
+    & p {
+        background-color: deeppink;
+
+    }
+
+}
+
+/* div > p {
+    background-color: deeppink;
+} */
+
+body {
+    background-color: greenyellow;
+    margin: 0px
+}
+
+h1 {
+    background-color: brown;
+    margin: 2px;
+}
+
