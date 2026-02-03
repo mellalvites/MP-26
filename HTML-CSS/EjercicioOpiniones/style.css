@@ -1,0 +1,56 @@
+body {
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.medico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+
+    & .bloque1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    & .bloque2 {
+        display: flex;
+        flex-direction: column;
+
+        & .titulos {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+
+            & h1,h2 {
+                font-size: 14px;
+            }
+            
+
+        }
+
+        & .botones {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    & .bloque3 {
+        display: flex;
+        flex-direction: row;
+
+        & .comentarios {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .nota{
+            border-color: black;
+            border-radius: 25%;
+        }
+    }
+
+}

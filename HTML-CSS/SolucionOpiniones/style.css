@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+    margin: 0;
+
+    & .centro-salud {
+        background-color: rgb(230, 230, 230);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: -1px -2px 5px 0px rgba(0,0,0,0.75);
+        border-radius: 5px;
+
+        & .contenedor-imagen {
+            margin: 10px;
+        }
+
+        & .contenedor-texto {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+
+            & h1 {
+                margin: 1px;
+                margin-left: 0px;
+                font-size: 20px;
+            }
+
+            & h2 {
+                margin: 3px;
+                margin-left: 0px;
+                font-size: 15px;
+                color: rgb(96, 246, 96)
+            }
+
+            & .contenedor-botones {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                & button {
+                    padding: 8px;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    background-color: rgb(93, 242, 93);
+                    border-width: 1px;
+                    border-color: green;
+                    cursor: pointer;
+
+                }
+
+                & #reservar-cita {
+                    background-color: rgb(206, 241, 240);
+                    border-color: rgb(2, 74, 74);
+                    color: rgb(2, 74, 74);
+                }
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+        & .contenedor-opiniones {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+
+
+
+            & .texto-opiniones {
+                color: rgb(2, 74, 74);
+
+                & a {
+                    text-decoration: none;
+                    color: rgb(2, 74, 74)
+                }
+
+                & p {
+                    margin: 3px;
+                    margin-left: 0px;
+
+
+
+                }
+            }
+
+
+            & #nota {
+                margin: 5px;
+                padding: 15px;
+                background-color: rgb(4, 203, 4);
+                border-radius: 15px;
+                color: white;
+                transition: 0.5s;
+            }
+
+            & #nota:hover{
+                border-style:solid;
+                border-width: 5px;
+                border-radius: 15px;
+                border-color: rgb(11, 85, 11);
+                border-top:0px;
+                border-left:0px;
+
+                transform: translateX(-5px) translateY(-3px);
+                transition: 0.5s;
+            }
+        }
+
+
+
+
+    }
+}
