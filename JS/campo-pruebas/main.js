@@ -21,3 +21,12 @@ console.log(arrayHobbies[1])
 arrayHobbies.push("Comer")
 
 console.log(arrayHobbies)
+
+// Condiciones 
+
+const numeroPeces = 17;
+
+if (numeroPeces <=4) {
+    console.log(`Tienes ${numeroPeces} peces que son menos de 4 peces`)
+}
+
