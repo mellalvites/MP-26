@@ -26,7 +26,7 @@ let palabraMasLarga
 
 for (const palabra of palabras) {
 
-    if (palabraMasLarga ) {
+    if (palabraMasLarga) {
         if (palabraMasLarga.length < palabra.length){
 
             palabraMasLarga = palabra
@@ -35,7 +35,15 @@ for (const palabra of palabras) {
     
     } else {
         palabraMasLarga = palabra
-        console.log(palabraMasLarga)
+        
     }
 
+    console.log(palabraMasLarga)   
 }
+
+
+
+
+
+
+
