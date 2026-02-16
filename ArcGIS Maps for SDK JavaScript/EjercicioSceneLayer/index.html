@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scene Layer</title>
+    <!-- Load Calcite Design System -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"
+    ></script>
+
+    <!-- Load the JavaScript Maps SDK core API -->
+    <script src="https://js.arcgis.com/4.34/"></script>
+
+    <!-- Load the JavaScript Maps SDK Map components or other component packages -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/4.34/map-components/"
+    ></script>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  
+  <script type="module" src="main.js" defer></script>
+  <body>
+    <arcgis-scene
+    basemap="topo-vector"
+    camera-position="-3.7, 40.42,1260"
+    camera-tilt="60"
+    camera-heading="40"
+    ></arcgis-scene>
+    <button id="gran-via">Gran Vía</button>
+    <button id="plaza-españa">Plaza España</button>
+    <button id="cibeles">Cibeles</button>
+    <button id="retiro">Retiro</button>
+  </body>
+</html>
