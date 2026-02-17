@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Web Component Layer List</title>
+  </head>
+  <!-- Load Calcite Design System -->
+  <script
+    type="module"
+    src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"
+  ></script>
+
+  <!-- Load the JavaScript Maps SDK core API -->
+  <script src="https://js.arcgis.com/4.34/"></script>
+
+  <!-- Load the JavaScript Maps SDK Map components or other component packages -->
+  <script
+    type="module"
+    src="https://js.arcgis.com/4.34/map-components/"
+  ></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+  <script type="module" src="main.js" defer></script>
+  <body>
+    <arcgis-scene
+      basemap="streets-3d"
+      item-id="6604dffad1c343c99338700729b48378"
+    >
+      <arcgis-layer-list slot="bottom-left"></arcgis-layer-list>
+      <arcgis-bookmarks slot="bottom-right"></arcgis-bookmarks>
+      <arcgis-coordinate-conversion
+        slot="top-left"
+        mode="live"
+        orientation="auto"
+      ></arcgis-coordinate-conversion>
+      <arcgis-expand slot="top-right">
+        <arcgis-line-of-sight></arcgis-line-of-sight>
+
+      </arcgis-expand>
+    </arcgis-scene>
+  </body>
+</html>
