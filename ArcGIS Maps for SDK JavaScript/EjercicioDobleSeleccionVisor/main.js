@@ -10,7 +10,6 @@ const SimpleMarkerSymbol = await $arcgis.import(
 const GraphicsLayer = await $arcgis.import(
   "@arcgis/core/layers/GraphicsLayer.js",
 );
-const Graphic = await $arcgis.import("@arcgis/core/Graphic.js");
 const SimpleFillSymbol = await $arcgis.import(
   "@arcgis/core/symbols/SimpleFillSymbol.js",
 );
