@@ -9,7 +9,12 @@ const SimpleMarkerSymbol = await $arcgis.import(
 const GraphicsLayer = await $arcgis.import(
   "@arcgis/core/layers/GraphicsLayer.js",
 );
+
+// Seleccionamos el mapa
+
+
 const arcgisMap = document.querySelector("arcgis-map");
+
 
 arcgisMap.addEventListener("arcgisViewReadyChange", (eventoViewReadyChange) => {
   // Este evento se ejecuta cuando se carga la vista del Mapa
@@ -19,7 +24,7 @@ arcgisMap.addEventListener("arcgisViewReadyChange", (eventoViewReadyChange) => {
   });
 
   // Carga la capa cuando la vista esté READY
-  //   arcgisMap.map.add(hospitalesFL)
+  //   arcgisMap.map.add(hospitalesFL) ----> no es necesaria añadirla
   arcgisMap.view.goTo([-4, 40]);
   arcgisMap.view.zoom = 6;
 
@@ -33,7 +38,7 @@ arcgisMap.addEventListener("arcgisViewReadyChange", (eventoViewReadyChange) => {
   // OJOO RESULTADO ES UNA PROMESA !!!!!!!!!!!!!!!!!!
 
   const resultadoQuery = hospitalesFL.queryFeatures(peticionQuery);
-
+  // Si sale bien...
   resultadoQuery.then((resultadoFeatureSet) => {
     const entidades = resultadoFeatureSet.features;
 
@@ -55,6 +60,7 @@ arcgisMap.addEventListener("arcgisViewReadyChange", (eventoViewReadyChange) => {
       yoffset: 0,
     });
 
+    // Como es un array trabajamos con iterador
     const entidadesConSimbologia = entidades.map((grafico) => {
       grafico.symbol = simbologiaPunto
       return grafico;
