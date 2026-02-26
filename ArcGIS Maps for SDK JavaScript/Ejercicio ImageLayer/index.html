@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Image Layer
+    </title>
+</head>
+
+<!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+<script type="module" src="https://js.arcgis.com/5.0/"></script>
+
+<script type="module" src="main.js" defer></script>
+
+<style>
+    html,
+    body {
+        height:100%;
+        margin:0;
+    }
+</style>
+<body>
+<arcgis-map basemap="topo-vector" center="-16.5056,28.3347" zoom="10">
+    <arcgis-swipe direction="horizontal" position="25"></arcgis-swipe>
+    <calcite-button id="natural" slot="top-left">Color natural</calcite-button>
+    <calcite-button id="geologia"slot="top-left">Geología</calcite-button>
+    <calcite-button id="cambio"slot="top-left">Cambio</calcite-button>
+</arcgis-map>
+</body>
+</html>

@@ -31,7 +31,8 @@ const vientoRenderer = new FlowRenderer({
 
 const vientoITL = new ImageryTileLayer({
   url: "https://tiledimageservices.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/NLDAS_Hourly_8_30_2021/ImageServer",
-  renderer:vientoRenderer
+  renderer:vientoRenderer,
+  effect: 'bloom(1.5,0.5px,0)'
 });
 const arcgisMap = document.querySelector("arcgis-map");
 
