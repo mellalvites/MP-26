@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Final SDK JS Mell Alvites Miyasato</title>
+</head>
+
+<!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+<script type="module" src="https://js.arcgis.com/5.0/"></script>
+
+<script type="module" src="main.js" defer></script>
+
+<style>
+    html,
+    body {
+        height:100%;
+        margin:0;
+    }
+</style>
+<body>
+<arcgis-map basemap="gray-vector" center="-3.68,40.41" zoom="11">
+    <arcgis-popup slot="bottom-right" alignment="bottom-right"></arcgis-popup>
+    <calcite-button slot="top-left" alignment="center">Borrar puntos y líneas</calcite-button>
+    <arcgis-layer-list slot="bottom-left"></arcgis-layer-list>
+    <!-- <arcgis-distance-measurement-2d slot="top-right">Comprobación 2 Km</arcgis-distance-measurement-2d> -->
+    <arcgis-legend slot="bottom-right"></arcgis-legend>
+</arcgis-map>
+</body>
+</html>
