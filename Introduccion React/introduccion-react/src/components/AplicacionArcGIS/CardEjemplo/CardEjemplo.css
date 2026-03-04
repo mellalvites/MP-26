@@ -1,0 +1,10 @@
+& .card-ejemplo {
+  padding: 30px;
+  margin: 15px;
+  background-color: rgb(173, 255, 188);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
