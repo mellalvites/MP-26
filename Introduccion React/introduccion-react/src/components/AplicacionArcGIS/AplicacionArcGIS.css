@@ -1,0 +1,35 @@
+.aplicacion-arcgis {
+  padding: 0;
+  margin: 0;
+  border-style: solid;
+  border-color: white;
+  background-color: violet;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    border-style: solid;
+    border-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: greenyellow;
+    justify-content: left;
+  }
+
+  & .texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    h1 {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+}
